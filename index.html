@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Front-End</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicolmr.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <form id="form3" class="formulariologin3">
+                <span class="msglogin">
+                    Recuperar senha<br>                    
+                    <img class="logo" src="assets/img/logo-black.png">
+
+                </span>
+                <span class="msgrecmeail">
+                    Insira o endereço de e-mail ou o número<br> do telefone celular associado à sua conta.<br>                   
+
+                </span>                
+                <input type="email" id="emailcon" name="email" placeholder="Email" required><br><br>                   
+                <input class="login" type="submit" onclick="recsenha2()" value="Continuar">
+                <div class="text-center">
+                    <p class="criarlogin">
+                        <a onclick="voltar2()" class="decno" href="#">Voltar</a>
+                    </p>
+                </div>
+            </form>
+            <form id="form2" class="formulariologin2">
+                <span class="msglogin">
+                    Criar conta<br>
+                    <img class="logo" src="assets/img/logo-black.png">
+
+                </span>                
+                <input type="text" id="user" name="user" placeholder="Nome" required><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <input type="password" id="confirmarsenha" name="confirmarsenha" placeholder="Confirmar senha"
+                    required><br><br>
+                <input class="login" type="submit" onclick="return validarSenha()" value="Continuar">
+                <div class="text-center">
+                    <p class="criarlogin">
+                        <a onclick="voltar()" class="decno" href="#">Voltar</a>
+                    </p>
+                </div>
+            </form>
+            <form id="form1" class="formulariologin">
+                <span class="msglogin">
+                    Bem vindo!<br>
+                    <img class="logo" src="assets/img/logo-black.png">
+
+                </span>
+                <input type="text" id="user" name="user" placeholder="Nome de usuário ou email" required><br>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required><br><br>
+                <input class="login" type="submit" value="Login">
+                <div class="text-center">
+                    <p class="fors">
+                        Esqueceu <a class="decno" onclick="recsenha()" href="#">Usuário/Senha</a>
+                    </p>
+                    <p class="criarlogin">
+                        <a onclick="criarconta()" class="decno" href="#">Cadastrar</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/condicaologin.js"></script>
+
+</body>
+
+</html>
